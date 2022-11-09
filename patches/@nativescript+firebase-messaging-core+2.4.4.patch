@@ -1,0 +1,24 @@
+diff --git a/node_modules/@nativescript/firebase-messaging-core/index.android.js b/node_modules/@nativescript/firebase-messaging-core/index.android.js
+index c292084..6035922 100644
+--- a/node_modules/@nativescript/firebase-messaging-core/index.android.js
++++ b/node_modules/@nativescript/firebase-messaging-core/index.android.js
+@@ -34,12 +34,13 @@ function ensureCallback() {
+                 }
+             }
+         };
+-        if (!MessagingCore.inForeground || !MessagingCore.appDidLaunch) {
+-            MessagingCore.addToResumeQueue(exec);
+-        }
+-        else {
+-            exec();
+-        }
++        exec();
++        // if (!MessagingCore.inForeground || !MessagingCore.appDidLaunch) {
++        //     MessagingCore.addToResumeQueue(exec);
++        // }
++        // else {
++        //     exec();
++        // }
+     };
+     CallbackImpl = __decorate([
+         Interfaces([org.nativescript.firebase.messaging.FirebaseMessaging.Callback])
