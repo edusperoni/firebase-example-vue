@@ -1,0 +1,15 @@
+{
+  "name": "firebase-example-vue",
+  "main": "app/app.js",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/core": "~8.3.0",
+    "@nativescript/theme": "~3.0.2",
+    "nativescript-vue": "~2.9.0"
+  },
+  "devDependencies": {
+    "@nativescript/webpack": "~5.0.9",
+    "nativescript-vue-template-compiler": "~2.9.0"
+  }
+}
